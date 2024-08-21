@@ -1,4 +1,4 @@
-import {Selects} from './componentes/Selects'
+import {Selects} from './Selects'
 
 const App = () => {
   return (
