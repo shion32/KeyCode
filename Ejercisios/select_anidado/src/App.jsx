@@ -1,13 +1,23 @@
-import {Selects} from './Selects'
+import {Selects} from './componentes/Selects'
 
 const App = () => {
   return (
     <>
-      <h1>Aprendizaje React</h1>
-      <p>Selects Anidados</p>
+      <body className="cuerpo" >
+      <header>
+        <div className='contenedor'>
+
+          <h2>Aprendizaje React</h2>
+
+        </div>
+      </header>
       <hr />
+      <p className='p'>Selects Anidados</p>
       {/* SelectAnidados */}
+      
       <Selects/>
+      
+      </body>
     </>
   );
 };
