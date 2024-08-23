@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 
-export const useFetch = (url) => {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState(null);
+export const useFetch = (url) => { // la url simepre debe de ir para redireccionar 
+  const [data,/*se modifica con set data, osea que se le agrega el valor por set data*/setData /* por medio de este medio modifico el valor de data */] = useState(null); // usestate valor inicial de la variable que puedo ser cambiada
+  //console.log(data)si  quiero mostrar el contendio siempre es por el primero por el de la izquierda, por eso data 
+  const [error, setError] = useState(null); // srive para identificar errorres 
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
+  useEffect(() => { // para eventos que se ejecuten con una accion del usuario 
     const abortController = new AbortController();
     const signal = abortController.signal;
 
