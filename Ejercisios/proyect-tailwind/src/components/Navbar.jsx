@@ -2,20 +2,20 @@ import React from "react";
 import { useState } from "react";
 
 const Navbar = () => {
-  const [estaAbierto, setEstaAbierto] = useState(false);
+  const [estaAbierto, setEstaAbierto] = useState(false);//va estar cerrado por eso el falso, por que no va estar ejecutandose la accion
 
   const menuCelular = () => {
-    setEstaAbierto(!estaAbierto);
+    setEstaAbierto(!estaAbierto);// si esta en false con esto lo abre 
   };
 
   return (
     /** la clase myNav esta en index.css pero es tailwind! */
     <nav className="myNav">
-      <div className="container flex justify-between items-center">
+      <div className="container flex justify-between items-center"> {/*el contenedro que contiene otros div*/}
         {/* Logo */}
         <div className="font-bold text-2xl">MyLogo</div>
         {/* Botones */}
-        <div className="space-x-4 hidden md:flex">
+        <div className="space-x-4 hidden md:flex">{/*contenedor de los botones, el hidden es para ocultar cuando esta en flex es decir cuando esta en cel, responsivo*/}
           <button className="hover:text-gray-200 border rounded p-1 bg-white text-black hover:bg-black">
             Inicio
           </button>
@@ -36,17 +36,17 @@ const Navbar = () => {
           </button>
         </div>
         {/* Usuario */}
-        <div className="hidden md:flex text-2xl border rounded-2xl p-2">
-          <i class="fa-solid fa-user"></i>
+        <div className="hidden md:flex text-2xl border rounded-2xl p-2">{/* no se vea el icono persona en flex*/}
+          <i class="fa-solid fa-user"></i>{/*el link de html que instala lo necesario para colocar este icono */}
         </div>
         {/* Menu hamburguesa para celular */}
-        <div className="text-2xl md:hidden">
-          <button onClick={menuCelular}>
-            <i class="fa-solid fa-bars"></i>
+        <div className="text-2xl md:hidden">{/* desplegar un menu hamburguesa en cel, pero que en pantalas para el pc se oculte*/}
+          <button onClick={menuCelular}>{/* desplegar un menu hamburguesa, con una accion*/}
+            <i class="fa-solid fa-bars"></i>{/* Logo rallitas */}
           </button>
         </div>
-
-        {estaAbierto && (
+        {/* cuando set sea tru y si el codigo anterior el de <div className="text-2xl md:hidden"> no esta abierto (osea que la accion no se ejecute) no se ejecutara, es por eso el &&, */}
+        {estaAbierto && ( 
           <div className="md:hidden absolute top-16 left-0 w-full bg-blue-600 text-center">
             <button className="block w-full py-2 hover:text-gray-200 rounded p-1 ">
               Inicio
