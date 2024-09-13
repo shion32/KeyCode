@@ -60,7 +60,7 @@ const ContactForm = () => {
       <form onSubmit={enviarFormulario}>
         {/* Nombre */}
         <p>Nombre</p>
-        <input
+        <input className="input"
           type="text"
           name="nombre"
           placeholder="Escribe tu nombre..."
@@ -73,7 +73,7 @@ const ContactForm = () => {
         {errores.nombre && <p className="p-error">{errores.nombre}</p>}
         {/* Email */}
         <p>Email</p>
-        <input
+        <input className="input"
           type="email"
           name="email"
           placeholder="Escribe tu correo electronico..."
@@ -86,7 +86,7 @@ const ContactForm = () => {
         {errores.email && <p className="p-error">{errores.email}</p>}
         {/* Asunto */}
         <p>Asunto</p>
-        <input
+        <input className="input"
           type="text"
           name="asunto"
           placeholder="Asunto..."
@@ -99,7 +99,7 @@ const ContactForm = () => {
         {errores.asunto && <p className="p-error">{errores.asunto}</p>}
         {/* Observaciones */}
         <p>Observaciones</p>
-        <textarea
+        <textarea className="input"
           name="observaciones"
           placeholder="Escribe tus observaciones..."
           required

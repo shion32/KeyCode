@@ -1,122 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
-  box-sizing: border-box;
-  font-size: 16px;
+  @apply box-border text-base;
   font-family: sans-serif;
 }
-
 *,
 *:after,
 *::before {
   box-sizing: inherit;
 }
-
+*,
+*:before,
+*:after {
+  @apply box-border;
+}
 input[type="text"],
 input[type="email"],
 textarea {
-  border: thin solid #dedede;
-  border-radius: 0.25rem;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  outline: none;
-  display: block;
-  width: 100%;
-  font-size: 1rem;
-  line-height: 1;
-  background-color: transparent;
+  @apply rounded w-[70%] text-[17px] leading-none bg-transparent text-center resize-none box-border mx-auto my-4 p-[15px] border-[thin] border-solid border-[rgba(179,179,179,255)];
+ 
 }
-
 textarea {
+  @apply resize-none;
   font-family: inherit;
-  resize: none;
 }
-
 button,
 input[type="submit"],
 input[type="reset"] {
-  border: thin solid #444;
-  border-radius: 0.25rem;
-  padding: 0.5rem 1rem;
-  margin: 0 0.5rem 0 0;
-  display: inline-block;
-  background-color: #eee;
-  color: #444;
-  font-weight: bold;
-  font-size: 1rem;
-  line-height: 1;
-  text-transform: none;
-  text-decoration: none;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
+  @apply relative text-base transition-all duration-[0.3s] ease-[ease] tracking-[0.1rem] uppercase bg-[#333] text-white text-center pr-[3.1rem] px-[3.2rem] py-4 border-[none];
 }
-
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  @apply bg-[#b30000] shadow-[0_6px_8px_rgba(0,0,0,0.2),0_2px_5px_rgba(0,0,0,0.15)];
+  /* Color de fondo al pasar el mouse */
+  /* Sombra más pronunciada */
+}
 form {
-  margin-bottom: 1rem;
-}
+  @apply w-[800px] h-auto transition-all duration-[0.3s] ease-[ease] flex flex-col items-center justify-center mb-4 mt-12;
 
+}
 hr {
-  margin: 2rem auto;
+  @apply mx-auto my-8;
 }
-
 img {
-  max-width: 100%;
-  height: auto;
+  @apply max-w-full h-auto;
 }
-
 label {
-  padding: 0.5rem 0;
-  margin: 0 0 0.5rem 0;
-  display: inline-block;
-  color: #444;
-  font-weight: bold;
-  line-height: 1;
-  cursor: pointer;
+  @apply inline-block text-[#444] font-[bold] leading-none cursor-pointer mt-0 mb-2 mx-0 px-0 py-2;
+  background-color: red;
 }
-
 select {
-  border: thin solid #dedede;
-  border-radius: 0.25rem;
-  padding: 0.5rem;
-  margin: 0 0 0.5rem 0;
-  display: block;
-  width: 100%;
-  color: #444;
-  font-size: 1rem;
-  line-height: 1;
-  background-color: transparent;
-  cursor: pointer;
+  @apply rounded block w-full text-[#444] text-base leading-none bg-transparent cursor-pointer mt-0 mb-2 mx-0 p-2 border-[thin] border-solid border-[#dedede];
 }
-
 table {
-  border-spacing: 0;
-  border-collapse: collapse;
-  width: 100%;
+  @apply border-spacing-0 w-full border-collapse;
 }
-
 th,
 td {
-  text-align: left;
-  padding: 0.5rem;
-  border-bottom: thin solid #dedede;
+  @apply text-left p-2 border-b-[thin] border-b-[#dedede] border-solid;
 }
-
 @media screen and (min-width: 1024px) {
   .grid-1-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @apply grid grid-cols-[1fr_1fr] gap-8;
     align-items: start;
-    gap: 2rem;
   }
-
   .grid-1-3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    @apply grid grid-cols-[1fr_1fr_1fr] gap-8;
     align-items: start;
-    gap: 2rem;
   }
 }
 
 .p-error{
-  font-weight: bold;
-  color: rgb(159, 7, 7);
+  @apply font-bold text-[rgb(159,_7,_7)]
+}
+
+
+body {
+  @apply flex justify-center items-center bg-[rgba(51,51,51,255)] m-0;
+}
+
+
+h1 {
+  @apply text-5xl italic text-[#555] text-center uppercase animate-[fadeIn_2s_ease-in-out];
+  text-shadow: 1px 1px 2px #aaa, 2px 2px 4px #888;
+  text-shadow: var(--shadow-name);
+}
+
+
+@keyframes fadeIn {
+  from {
+    @apply opacity-0 -translate-y-5;
+  }
+  to {
+    @apply opacity-100 translate-y-0;
+  }
+}
+:root {
+  --shadow-name: 2px 2px 5px rgba(209, 45, 45, 0.5);
+}
+
+p {
+  @apply text-lg;
+  text-shadow: 1px 1px 1px #888;
 }

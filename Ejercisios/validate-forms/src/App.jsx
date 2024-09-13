@@ -6,7 +6,7 @@ import { Loader } from './components/Loader';
 function App() {
     return (
     <>
-      <h1>Validate Forms</h1>
+      
       <div className="card">
         <ContactForm/>
         <Loader/>
