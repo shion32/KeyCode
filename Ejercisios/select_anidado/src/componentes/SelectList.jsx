@@ -22,7 +22,7 @@ export const SelectList = ({ manejadorCambio, title, url }) => { //los cambios q
       </label>
       <select name={key} id={key} onChange={manejadorCambio}>
         <option value="">Seleccione un {title}</option>
-        {data && options.map((option) => ( //
+        {data  && options.map((option) => ( //
           <option key={option.id} value={option.id}>{option.name}</option>
         ))}
       </select>

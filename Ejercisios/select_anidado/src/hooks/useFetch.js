@@ -6,7 +6,7 @@ export const useFetch = (url) => { // la url simepre debe de ir para redireccion
   const [error, setError] = useState(null); // srive para identificar errorres 
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => { // para eventos que se ejecuten con una accion del usuario 
+  useEffect(() => { // para eventos que se ejecuten con una accion indirecta del usuario 
     const abortController = new AbortController();
     const signal = abortController.signal;
 

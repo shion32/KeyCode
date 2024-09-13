@@ -12,7 +12,7 @@ export const Selects = () => {
   console.log("Departamento ID", departamentos);
   console.log("Municipio ID", municipios);
 
-  useEffect(() => {
+  useEffect(() => {//va estar escichando de manera continua lso eventos asi que cuando cambie algo este motrara lo infotmacion del otro  y podra
     if (municipios) {
       fetch(`https://api-colombia.com/api/v1/City/${municipios}`)
         .then((response) => {
