@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .nav{
+    background-color: aqua;
+    padding: 3px 4px;
+}
+
+.botones{
+    display: flex;           
+    justify-content: center; 
+    gap: 20px; 
+} */
+
+/* .logo {
+    width: 120px; 
+    height: auto; 
+  } */
+
+  .sol{
+    font-Size: '1500px';
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  
+  .mt-auto {
+    margin-top: auto; /* Esto empuja el footer al fondo */
+  }
+  
+  .bg-gray-200 {
+    background-color: #e2e8f0; /* Fondo gris claro */
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .p-4 {
+    padding: 1rem; /* Espaciado interno */
+  }
+
+  .section{
+    background-color: aqua;
+    margin-bottom: 100px;
+    padding: 50px;
+  }
+  .header{
+    height: 90vh;
+    min-height: 20rem;
+    max-height: 50rem;
+    position: relative;
+    background-color: blue;
+  }
+
+  .active-link{
+    border-bottom: thin solid rgb(255, 255, 255);
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+  }
