@@ -1,6 +1,5 @@
 export {Nav} from "./nav";
 export {Header} from "./header";
-export {Main} from "./main";
 export {Footer} from "./footer";
 export {About} from "./about";
 export {Proyectos} from "./proyectos";
