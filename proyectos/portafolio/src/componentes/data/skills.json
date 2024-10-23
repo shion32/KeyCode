@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "icon": "fa-solid fa-database",
+      "title": "Base de datos",
+      "description": "Gestión y optimización de bases de datos, garantizando la calidad y eficiencia en cada etapa del proceso."
+    },
+    {
+      "id": 2,
+      "icon": "fa-solid fa-code",
+      "title": "Backend",
+      "description": "Implementación de la lógica en el análisis y ejecución del software, aplicando buenas prácticas de desarrollo."
+    },
+    {
+      "id": 3,
+      "icon": "fa-solid fa-brush",
+      "title": "Front-end",
+      "description": "Diseño con enfoque responsivo, orientado a la máxima calidad y optimización del aplicativo."
+    },
+    {
+      "id": 4,
+      "icon": "fa-solid fa-users-line",
+      "title": "Metodologías ágiles",
+      "description": "Uso de metodologías ágiles y trabajo en equipo, asegurando entregas continuas de resultados de alta calidad."
+    }
+  ]

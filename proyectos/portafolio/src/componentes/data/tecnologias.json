@@ -1,0 +1,43 @@
+[
+    {
+      "name": "PHP",
+      "icon": "fa-brands fa-php",
+      "size": "text-9xl"
+    },
+    {
+      "name": "React",
+      "icon": "fa-brands fa-react",
+      "size": "text-6xl"
+    },
+    {
+      "name": "GitHub",
+      "icon": "fa-brands fa-github",
+      "size": "text-6xl"
+    },
+    {
+      "name": "CSS3",
+      "icon": "fa-brands fa-css3-alt",
+      "size": "text-6xl"
+    },
+    {
+      "name": "HTML5",
+      "icon": "fa-brands fa-html5",
+      "size": "text-6xl"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "fa-brands fa-js",
+      "size": "text-6xl"
+    },
+    {
+      "name": "Linux",
+      "icon": "fa-brands fa-linux",
+      "size": "text-6xl"
+    },
+    {
+      "name": "Python",
+      "icon": "fa-brands fa-python",
+      "size": "text-6xl"
+    }
+    
+  ]

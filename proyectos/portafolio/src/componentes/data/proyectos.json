@@ -1,0 +1,25 @@
+[
+    
+        {
+          "id": 1,
+          "nombre": "Team Work 1",
+          "descripcion": "Descripción del Proyecto 1",
+          "tecnologias": ["React", "HTML", "Tailwind", "CSS"],
+          "imagen": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1650&q=80"
+        },
+        {
+          "id": 2,
+          "nombre": "Team Work 2",
+          "descripcion": "Descripción del Proyecto 2",
+          "tecnologias": ["React", "HTML", "Tailwind", "CSS"],
+          "imagen": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1650&q=80"
+        },
+        {
+          "id": 3,
+          "nombre": "Team Work 3",
+          "descripcion": "Descripción del Proyecto 3",
+          "tecnologias": ["React", "HTML", "Tailwind", "CSS"],
+          "imagen": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1650&q=80"
+        }
+        
+]
