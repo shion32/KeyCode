@@ -1,0 +1,18 @@
+{
+    "header": {
+      "images": [
+        {
+          "src": "../img/florGrande.png",
+          "alt": "grande",
+          "className": "florG"
+        },
+        {
+          "src": "../img/florpequeña.png",
+          "alt": "pequeña",
+          "className": "florP"
+        }
+      ],
+      "title": "holaa, soy Anny Montaño software developer",
+      "quote": "\"Codifica tu futuro, depura tus límites.\""
+    }
+  }

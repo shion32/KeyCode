@@ -22,7 +22,7 @@ export const Nav = () => {
         <div className="logo flex-1 pl-[6rem]">
           <img src={logo} alt="logo" width="60px" height="auto" />
         </div>
-        <div className=" botones hidden md:flex flex-grow justify-end space-x-7 text-black font-bold">
+        <div className=" botones hidden md:flex pr-[16px] space-x-7 text-black font-bold">
           {["home", "about", "skills", "tecnologias", "proyectos"].map(
             (boton) => (
               <a href={`#${boton}`} key={boton}>
@@ -38,11 +38,8 @@ export const Nav = () => {
             )
           )}
         </div>
-        <div className="sol hidden md:flex text-2xl pl-16 pr-10">
-          <i className="fa-regular fa-sun" style={{ fontSize: "2rem" }}></i>
-        </div>
         <div
-          className="md:hidden flex items-center pl-4"
+          className="md:hidden flex items-center pl-5"
           style={{ fontSize: "2.6rem" }}
         >
           <button onClick={menuCelular}>

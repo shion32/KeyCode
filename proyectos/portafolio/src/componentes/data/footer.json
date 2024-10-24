@@ -1,0 +1,19 @@
+{
+    "footer": {
+      "text": "© Copyright 2024 . hecho por Anny Montaño",
+      "links": [
+        {
+          "href": "mailto:tuemail@example.com",
+          "iconClass": "fa-regular fa-envelope"
+        },
+        {
+          "href": "https://github.com/shion32",
+          "iconClass": "fa-brands fa-github"
+        },
+        {
+          "href": "https://www.linkedin.com/in/anny-sofia-monta%C3%B1o-jimenez-6405332b7/",
+          "iconClass": "fa-brands fa-linkedin"
+        }
+      ]
+    }
+  }
